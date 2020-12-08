@@ -13,11 +13,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/users")
+//@RequestMapping("api/users")
 public class UserController {
-    private static final List<User> users = new ArrayList<User>(
-            new User(1, "notAnEmail@gmail.com", "joshua")
-    );
+    private static final List<User> users = new ArrayList<User>();
 
     @GetMapping("/home")
     public ResponseEntity<?> message() {
